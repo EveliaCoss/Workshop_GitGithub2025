@@ -8,7 +8,6 @@
     cd /home/usuario/data/
     ```
 
-<!-- -->
 
 -   Ruta / Camino relativo
 
@@ -25,7 +24,7 @@
 | `cd`           | Moverse de directorios                               | cd /home/usuario/data/              |
 | `mkdir`        | Crear un nuevo directorio                            | mkdir data                          |
 | `rmdir`        | Eliminar el directorio                               | rmkdir -rf data                     |
-| `nano` / `vim` | Editores de texto plano                              | nano Archivo.txt / vim Archivo.txt  |
+| `nano`/`vim` | Editores de texto plano                              | nano Archivo.txt / vim Archivo.txt  |
 | `cp`           | Copiar archivos                                      | cp Archivo1.txt /home/usuario/data/ |
 | `mv`           | Mover un archivo o carpeta                           |                                     |
 | `echo`         | Para llamar y/o declarar variables                   | echo "Hello world"                  |

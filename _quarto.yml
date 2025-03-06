@@ -3,9 +3,9 @@ project:
   output-dir: docs
 
 book:
-  title: "Workshop sobre Git / Github 2024"
+  title: "Workshop sobre Git / Github 2025"
   author: "Dra. Evelia Coss"
-  date: "10/15/2024"
+  date: "07/03/2025"
   page-navigation: true
   chapters:
     - index.qmd

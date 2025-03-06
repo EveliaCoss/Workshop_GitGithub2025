@@ -63,7 +63,7 @@ Con Git cada contribuidor tiene una copia del repositorio central, con todos los
 
 [GitHub](https://github.com/about) es una plataforma para guardar proyectos, hace uso de Git. Su principal utilidad es para generar código fuente de programas.
 
-También existen otras plataformas como [Bitbucked](https://bitbucket.org/product/) y [GitLab](https://about.gitlab.com/), las cuales funcionan de manera similar a GitHub.
+También existen otras plataformas como [Bitbucked](https://bitbucket.org/product/) y [GitLab](https://about.gitlab.com/), las cuales funcionan de manera similar a GitHub.
 
 ## Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)
 
