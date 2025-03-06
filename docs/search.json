@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Workshop sobre Git / Github 2024",
+    "section": "",
+    "text": "Información general\n\n\nSobre el curso 📌Requisitos previosAgenda 📆\n\n\nEste documento se basa en “Happy Git with R” de Jenny Bryan, los STAT 545 TAs, Jim Hester, así como lasguías practicas de Github.\n\nFechas: 16 y 18 octubre 2024\nDuración del curso: 3 horas y 30 minutos\n\nInstructora:\n\nEvelia Lorena Coss-Navarrete - PostDoc, LIIGH-UNAM.\n\nResumen:\nEste tutorial te enseñará los conceptos fundamentales de GitHub, incluyendo repositorios, ramas, confirmaciones y solicitudes de cambio. A través de la creación de tu propio repositorio personalizado y pagina web, aprenderás a gestionar el flujo de trabajo de las solicitudes de cambio, un método ampliamente utilizado para colaborar en la creación y revisión de código.\nObjetivos:\nEn esta guía rápida aprenderás a:\n\nCrear y gestionar un repositorio.\nIniciar y administrar una nueva rama.\nRealizar cambios en un archivo y enviarlos a GitHub como confirmación.\nCrear tu página de inicio en Github.\nCrear tu página web.\n\nCitar y reutilizar el material del curso\nLos datos del curso se pueden reutilizar y adaptar libremente con la debida atribución. Todos los datos de los cursos de estos repositorios están sujetos a la licencia Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).\n\n\n\nDebes tener una cuenta de usuario de GitHub. Para más información, consulta “Creación de una cuenta en GitHub”.\nNo necesitas saber cómo codificar, utilizar la línea de comandos o instalar Git (el software de control de versiones en el que está compilado GitHub).\nContar con una terminal con Git, en Windows puedes usar Git Bash.\n\n\n\n\n\n\n\n\n\n\nTema\nTiempo\n\n\n\n\n🔷 Sección 1 - (8:30 - 10:00 h) (16 octubre)\n\n\n\n\nCreación de una cuenta en GitHub\n\n5 min\n\n\n\nIntroducción a Git / GitHub\n\n15 min\n\n\n\nActividad 1: Sincronización y llaves\n\n15 min\n\n\n☕ Coffee break (10 min) - (9:05-9:20) ☕\n10 min\n\n\n🔷  Sección 2 - (9:20-10:00 h)\n\n\n\n\nComandos usados en Github y RStudio\n\n25 min\n\n\n\nActividad 2: Pagina de inicio en GitHub\n\n15 min\n\n\n🔷  Sección 3 - (9:30 - 11:30 h) (18 octubre)\n\n\n\n\nBuenas practicas en R\n\n30 min\n\n\n\nActividad 3: Pagina web en GitHub\n\n1:30 min"
+  },
+  {
+    "objectID": "Bash.html#preparación-del-directorio-de-trabajo",
+    "href": "Bash.html#preparación-del-directorio-de-trabajo",
+    "title": "1  Recordatorio de pasos en Bash",
+    "section": "1.1 Preparación del directorio de trabajo",
+    "text": "1.1 Preparación del directorio de trabajo\n\nRuta / Camino absoluto\ncd /home/usuario/data/\n\n\n\nRuta / Camino relativo\ncd ../ # Ir a la carpeta anterior"
+  },
+  {
+    "objectID": "Bash.html#comandos-básicos",
+    "href": "Bash.html#comandos-básicos",
+    "title": "1  Recordatorio de pasos en Bash",
+    "section": "1.2 Comandos básicos",
+    "text": "1.2 Comandos básicos\n\n\n\n\n\n\n\n\nComandos\nInformación\nArgumentos\n\n\n\n\nssh\nConexión a servidores\nssh usuario@servidor.mx\n\n\nls\nObservar el contenido de los archivos en una carpeta\nls directorio/\n\n\ncd\nMoverse de directorios\ncd /home/usuario/data/\n\n\nmkdir\nCrear un nuevo directorio\nmkdir data\n\n\nrmdir\nEliminar el directorio\nrmkdir -rf data\n\n\nnano / vim\nEditores de texto plano\nnano Archivo.txt / vim Archivo.txt\n\n\ncp\nCopiar archivos\ncp Archivo1.txt /home/usuario/data/\n\n\nmv\nMover un archivo o carpeta\n\n\n\necho\nPara llamar y/o declarar variables\necho “Hello world”\n\n\nchmod\nCambiar permisos del usuario\nchmod 777 data/\n\n\nrsync\nDescargar o subir archivos\n\n\n\nscp\nDescargar o subir archivos"
+  },
+  {
+    "objectID": "intro.html#objetivo-de-este-mini-curso",
+    "href": "intro.html#objetivo-de-este-mini-curso",
+    "title": "2  Introducción a Git / GitHub",
+    "section": "2.1 Objetivo de este mini curso: 📌",
+    "text": "2.1 Objetivo de este mini curso: 📌\n\n2.1.1 Hacia una biología computacional más reproducible, transparente y colaborativa 💜\n\n\n\n\n\n\nTip\n\n\n\n“Los hechos individuales no reproducibles no tienen ninguna importancia para la ciencia”\nKarl Popper"
+  },
+  {
+    "objectID": "intro.html#por-qué-hacer-control-de-versiones-de-nuestros-proyectos",
+    "href": "intro.html#por-qué-hacer-control-de-versiones-de-nuestros-proyectos",
+    "title": "2  Introducción a Git / GitHub",
+    "section": "2.2 ¿Por qué hacer control de versiones de nuestros proyectos?",
+    "text": "2.2 ¿Por qué hacer control de versiones de nuestros proyectos?\n\n✅ Los proyectos suelen cambiar y crecer.\n💾 Es díficil saber cuáles fueron todos los cambios a lo largo del tiempo (en especial tiempos largos, hazlo por tu yo del futuro!).\n🤔 Las colaboraciones se pueden complicar sin un buen control de versiones.\n🔐 Seguridad.\n\n\n\n\n“notFinal.doc” by Jorge Cham, https://www.phdcomics.com"
+  },
+  {
+    "objectID": "intro.html#git",
+    "href": "intro.html#git",
+    "title": "2  Introducción a Git / GitHub",
+    "section": "2.3 Git",
+    "text": "2.3 Git\nGit es un sistema de control de versiones distribuido, gratuito y de código abierto, diseñado para manejar todo tipo de proyectos, desde los más pequeños hasta los más grandes, con rapidez y eficiencia.\nGit es fácil de aprender y ocupa poco espacio con un rendimiento rapidísimo. Supera a las herramientas SCM como Subversion, CVS, Perforce y ClearCase con características como la ramificación local barata, las cómodas áreas de preparación y los múltiples flujos de trabajo.\nEn resumen:\n\nGit es un sistema de control de versiones\nGit funciona con GitHub, Bitbucket o GitLab"
+  },
+  {
+    "objectID": "intro.html#git-vs-controles-de-versión-a-mano",
+    "href": "intro.html#git-vs-controles-de-versión-a-mano",
+    "title": "2  Introducción a Git / GitHub",
+    "section": "2.4 Git vs controles de versión a mano",
+    "text": "2.4 Git vs controles de versión a mano\n\n\n\n\n\nCon Git cada contribuidor tiene una copia del repositorio central, con todos los archivos y la historia de los cambios por los que han pasado."
+  },
+  {
+    "objectID": "intro.html#recomendaciones-para-sus-proyectos",
+    "href": "intro.html#recomendaciones-para-sus-proyectos",
+    "title": "2  Introducción a Git / GitHub",
+    "section": "2.5 Recomendaciones para sus proyectos",
+    "text": "2.5 Recomendaciones para sus proyectos\n\nDedicar un directorio exclusivo por proyecto.\nEs mejor organizarlo en un RStudio Project.\nHacer un repositorio de Git.\nTrabajen como siempre, solo además de guardar, recuerden hacer commit\nDe vez en vez hagan push de sus cambios cuando los hayan verificado."
+  },
+  {
+    "objectID": "intro.html#proyectos-colaborativos",
+    "href": "intro.html#proyectos-colaborativos",
+    "title": "2  Introducción a Git / GitHub",
+    "section": "2.6 10.5 Proyectos colaborativos",
+    "text": "2.6 10.5 Proyectos colaborativos\n\nGitHub se parece más a un GoogleDoc que a un Word Document.\nEs fácil que los colaboradores hagan cambios y también es fácil saber quién hizo que.\nEl owner del proyecto puede dar permisos a los diferentes colaboradores.\nTambién existen organizaciones, esto puede ser útil para manejar los permisos de grupos grandes de colaboración."
+  },
+  {
+    "objectID": "intro.html#github",
+    "href": "intro.html#github",
+    "title": "2  Introducción a Git / GitHub",
+    "section": "2.7 GitHub",
+    "text": "2.7 GitHub\nGitHub es una plataforma para guardar proyectos, hace uso de Git. Su principal utilidad es para generar código fuente de programas.\nTambién existen otras plataformas como Bitbucked y GitLab, las cuales funcionan de manera similar a GitHub."
+  },
+  {
+    "objectID": "intro.html#manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario",
+    "href": "intro.html#manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario",
+    "title": "2  Introducción a Git / GitHub",
+    "section": "2.8 Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)",
+    "text": "2.8 Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)\n\nPor cualquier problema con la conexión entre RStudio y Git, siempre ten en cuenta la ubicación de dónde se instaló Git.\n\nPuedes usar en la terminal which git (Mac y Linux)\nO bien usar en la terminal where git (Windows)\n\nRecuerda que la terminal (línea de comandos, consola, shell o bash) es un programa en tu computadora que funciona para correr otros programas. Desde RStudio puedes abrir la terminal, lo cual es muy conveniente si estás trabajando en un proyecto. Puedes abrir una terminal con:\n\nTools &gt; Terminal (abre la terminal dentro del IDE de RStudio)\nTools &gt; Shell (abre una terminal externa a RStudio) &gt; Apply &gt; OK"
+  },
+  {
+    "objectID": "intro.html#clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo",
+    "href": "intro.html#clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo",
+    "title": "2  Introducción a Git / GitHub",
+    "section": "2.9 Clonar un repositorio y tener conexión/permisos para modificarlo",
+    "text": "2.9 Clonar un repositorio y tener conexión/permisos para modificarlo\n\nGit puede comunicarse con un servidor remoto usando uno de dos protocolos, HTTPS o SSH, y cada protocolo usa credenciales diferentes.\nLa recomendación actual de GitHub es usar HTTPS porque es la manera más fácil de configurar y tiene operatividad en múltiples redes y plataformas.\n\nEs menos probable que HTTPS sea bloqueado por un firewall.\nUna conexión HTTPS permite que credential.helper almacene en caché su contraseña. (por tanto puedes configurar tu usuario y contraseña en tu equipo de uso).\nEs más sencillo acceder a un repositorio desde cualquier lugar, ya que solo necesitas los detalles de tu cuenta (no se requieren claves SSH) para escribir en el repositorio.\n\nUsualmente cuando inicies un proyecto colaborativo con GitHub inicializa el repositorio con un README. Copia el HTTPS URL para clonar el repositorio en la terminal git clone https://github.com/TU-USUARIO/TU-REPOSITORIO.git."
+  },
+  {
+    "objectID": "intro.html#conectar-a-github-con-ssh",
+    "href": "intro.html#conectar-a-github-con-ssh",
+    "title": "2  Introducción a Git / GitHub",
+    "section": "2.10 Conectar a GitHub con SSH",
+    "text": "2.10 Conectar a GitHub con SSH\nPuedes conectarte a GitHub utilizando el Protocolo de Secure Shell (SSH), lo cual proporciona un canal seguro sobre una red insegura.\nPuedes asegurar tus claves SSH y configurar un agente de autenticación para no tener que volver a ingresar tu contraseña cada vez que uses tus claves SSH.\nAqui esta la guia que puedes seguir https://docs.github.com/es/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases.\nTambien puedes crear tokens para usar la via HTTPs, puedes seguir los pasos en este tutorial.\n\n\n\n\n\n\nActividad (15 min):\n\n\n\nDeberan contar con:\n\nUna cuenta en GitHub\nR y RStudio actualizados\nGit instalado\nConectar Github con SSH o HTTPs."
+  },
+  {
+    "objectID": "intro.html#referencias",
+    "href": "intro.html#referencias",
+    "title": "2  Introducción a Git / GitHub",
+    "section": "2.11 Referencias",
+    "text": "2.11 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nGithub tutorial: Trabajar con contraseñas de clave SSH\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio\nHacia una biología computacional más reproducible, transparente y colaborativa"
+  },
+  {
+    "objectID": "Parte2.html#github-primero-rstudio-después",
+    "href": "Parte2.html#github-primero-rstudio-después",
+    "title": "3  Comandos usados en Github y RStudio",
+    "section": "3.1 GitHub primero, RStudio después…",
+    "text": "3.1 GitHub primero, RStudio después…\n\nCrea un repositorio en GitHub: mi_repositorio &gt; Public &gt; YES initialize this repository with a README &gt; clicken el gran botón verde “Create repository”\nEn RStudio crea un nuevo proyecto: File &gt; New Project &gt; Version Control &gt; Git. Ahi pega el URL del repositorio https://github.com/mi_usuario/mi_repositorio.git. Da click en Create Project.\n\nEsto nos generará los siguientes elementos:\n\nUn directorio nuevo\nUn repositorio Git enlazado a al repositorio de GitHub\nUn proyecto en RStudio\n\nCon este procedimiento ya no es necesario preocuparse por configurar controles remotos Git y rastrear ramas en la línea de comandos."
+  },
+  {
+    "objectID": "Parte2.html#comentar-pull-y-push-en-rstudio",
+    "href": "Parte2.html#comentar-pull-y-push-en-rstudio",
+    "title": "3  Comandos usados en Github y RStudio",
+    "section": "3.2 Comentar, pull y push en Rstudio",
+    "text": "3.2 Comentar, pull y push en Rstudio\n\n\n\n\n\nCon la flecha azul podemos hacer pull (RECUERDA HACERLO ANTES DE HACER UN PUSH), y con la flecha verde un push. Para poder comentar y hacer push debemos marcar con una palomita mediante un click en las pequeñas cajas blancas de la columna Staged, damos click en commit lo cual nos abre la siguiente ventana.\n\nVolvemos a dar click en commit, y finalizamos con push (flecha verde)."
+  },
+  {
+    "objectID": "Parte2.html#pagina-de-inicio-en-github",
+    "href": "Parte2.html#pagina-de-inicio-en-github",
+    "title": "3  Comandos usados en Github y RStudio",
+    "section": "3.3 Pagina de inicio en GitHub",
+    "text": "3.3 Pagina de inicio en GitHub\n\n\n\n\n\n\nActividad\n\n\n\n\nEn GitHub, crea un repositorio con el mismo nombre de usuario. Ejemplo: Mi usuario es EveliaCoss y mi repositorio se llama EveliaCoss, dandome la siguiente liga https://github.com/EveliaCoss/EveliaCoss\nAgrega un README al repositorio con tu informacion. Por Default ya trae una plantilla, modificala y adaptala a tu gusto.\nVisualiza como cambia tu inicio en el Github.\nSincroniza el GitHub en RStudio y realiza los cambios desde ahi."
+  },
+  {
+    "objectID": "Parte2.html#referencias",
+    "href": "Parte2.html#referencias",
+    "title": "3  Comandos usados en Github y RStudio",
+    "section": "3.4 Referencias",
+    "text": "3.4 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio"
+  },
+  {
+    "objectID": "Parte3.html#materiales-informativos",
+    "href": "Parte3.html#materiales-informativos",
+    "title": "4  Buenas practicas en R",
+    "section": "4.1 Materiales informativos",
+    "text": "4.1 Materiales informativos\n\nCurso de Joselyn Cristina Chávez Fuentes\nMe ayudo mucho este Video\nDocumentación de funciones de Andrés Arredondo Cruz\n\n💪 Estuve muy intensa viendo su codigo. Muchas gracias por tenerlos publico."
+  },
+  {
+    "objectID": "Parte3.html#un-algoritmo-nos-permite-resolver-un-problema",
+    "href": "Parte3.html#un-algoritmo-nos-permite-resolver-un-problema",
+    "title": "4  Buenas practicas en R",
+    "section": "4.2 Un algoritmo nos permite resolver un problema ⭐",
+    "text": "4.2 Un algoritmo nos permite resolver un problema ⭐\nUn algoritmo es un método para resolver un problema mediante una serie de pasos definidos, precisos y finitos.\n\nDefinido: si se sigue dos veces, se obtiene el mismo resultado. Es reproducible.\nPreciso: implica el orden de realización de cada uno de los pasos.\nFinito: Tiene un numero determinado de pasos, implica que tiene un fin.\n\n\nUn algoritmo podemos definirlo como un programa o software."
+  },
+  {
+    "objectID": "Parte3.html#para-escribir-un-buen-software-necesitas",
+    "href": "Parte3.html#para-escribir-un-buen-software-necesitas",
+    "title": "4  Buenas practicas en R",
+    "section": "4.3 Para escribir un buen software necesitas:",
+    "text": "4.3 Para escribir un buen software necesitas:\n\nEscribir código mantenible (maintainable code), usar control de versiones (version control) y rastreadores de problemas (issue trackers), revisiones de código (code reviews), pruebas unitarias (unit testing) y automatización de tareas (task automation).\nWilson, et al. 2014. PLOS Biology\n\nCon el fin de previnir retracciones.\n\n\n\n\n\n\nPasos para escribir un buen software\n\n\n\n\nAnálisis del problema / Definir el problema\nDiseño del algoritmo / Diseño del programa\nCodificación / Escribir el código\nCompilación y ejecución del programa\nVerificación / Realizar pruebas\nDepuración / Detectar los errores y corregirlos\n\n\nProgramacion defensiva\n\n\nDocumentación"
+  },
+  {
+    "objectID": "Parte3.html#paso-7-documentación",
+    "href": "Parte3.html#paso-7-documentación",
+    "title": "4  Buenas practicas en R",
+    "section": "4.4 Paso 7: Documentación",
+    "text": "4.4 Paso 7: Documentación\n\n\n\n\n\n\nNote\n\n\n\n\nAutor (author): Su nombre\nDia (date): Fecha de creación\nPaquetes (packages)\nDirectorio de trabajo (Working directory): En que carpeta se encuentra tu datos y programa.\nInformación descriptiva del programa (Description): ¿Para qué sirve el programa? Ej: El siguiente programa realiza la suma de dos numeros enteros a partir de la entrada del usuario y posteriormente la imprime en pantalla.\nUsage ¿Cómo se utiliza?\nArgumentos (Arguments)\n\nInformación de entrada (Data Inputs): Ej: Solo numeros enteros (sin decimales).\nInformación de salida (Outpus): Graficas, figuras, tablas, etc."
+  },
+  {
+    "objectID": "Parte3.html#puntos-claves-para-buenas-practicas-en-bioinfo",
+    "href": "Parte3.html#puntos-claves-para-buenas-practicas-en-bioinfo",
+    "title": "4  Buenas practicas en R",
+    "section": "4.5 Puntos claves para buenas practicas en bioinfo ⭐",
+    "text": "4.5 Puntos claves para buenas practicas en bioinfo ⭐\n\nEscriba programas para personas, no para computadoras (Documenta qué hace y por qué). - Se coherente en la nomenclatura, indentación y otros aspectos del estilo.\nDivide los programas en funciones cortas de un solo propósito. 💻 📚\nNo repitas tu código. Crea pasos reproducibles o que se repitan por si solas. ➰\nPlanifique los errores (Programacion defensiva) 🚩\nOptimice el software sólo después de que funcione correctamente. - Si funciona no lo modifiques, simplificalo.\nColaborar - Busque siempre bibliotecas de software bien mantenidas que hagan lo que necesita. 👥\n\n\n\n\n\n\n\nEjemplo de como realizo mis documentos 💜\n\n\n\nAqui les dejo el script que les doy a mis alumnos VisualizacionDatos.R del curso de Análisis de datos de RNA-Seq."
+  },
+  {
+    "objectID": "Parte3.html#pagina-web-en-github",
+    "href": "Parte3.html#pagina-web-en-github",
+    "title": "4  Buenas practicas en R",
+    "section": "4.6 Pagina web en GitHub",
+    "text": "4.6 Pagina web en GitHub\n\n\n\n\n\n\nActividad\n\n\n\n\nEn GitHub, crea un repositorio con el mismo nombre de usuario y agregale “.github.io”. Ejemplo: Mi usuario es EveliaCoss y mi repositorio se llama “EveliaCoss.github.io”, dandome la siguiente liga https://github.com/EveliaCoss/EveliaCoss.github.io\nDescarga el archivo index.Rmd y modificalo con tu informacion en tu repositorio.\nNo olvides sincronizar el GitHub en RStudio y realiza los cambios desde ahi.\nEn GitHub, convierte en pagina web tu repositorio en Settings &gt; Pages &gt; Branch cambia a Main y root &gt; Save"
+  },
+  {
+    "objectID": "Parte3.html#top-github-users-by-public-contributions-in-mexico",
+    "href": "Parte3.html#top-github-users-by-public-contributions-in-mexico",
+    "title": "4  Buenas practicas en R",
+    "section": "4.7 Top GitHub Users By Public Contributions in Mexico",
+    "text": "4.7 Top GitHub Users By Public Contributions in Mexico"
+  },
+  {
+    "objectID": "Parte3.html#referencias",
+    "href": "Parte3.html#referencias",
+    "title": "4  Buenas practicas en R",
+    "section": "4.8 Referencias",
+    "text": "4.8 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio\nWilson, et al. 2014. Best Practices for Scientific Computing. PLOS Biology\nEvelia Coss - tutorial Buenas practicas en R\nEvelia Coss - Make your CV tutorial"
+  }
+]
