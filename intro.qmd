@@ -93,30 +93,6 @@ También existen otras plataformas como [Bitbucked](https://bitbucket.org/produc
 
 -   Usualmente cuando inicies un proyecto colaborativo con GitHub inicializa el repositorio con un README. Copia el HTTPS URL para clonar el repositorio en la terminal `git clone` `https://github.com/TU-USUARIO/TU-REPOSITORIO.git`.
 
-## Conectar a GitHub con SSH
-
-Puedes conectarte a GitHub utilizando el **Protocolo de Secure Shell (SSH),** lo cual proporciona un canal seguro sobre una red insegura.
-
-Puedes asegurar tus claves SSH y configurar un agente de autenticación para no tener que volver a ingresar tu contraseña cada vez que uses tus claves SSH.
-
-Aqui esta la guia que puedes seguir <https://docs.github.com/es/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases>.
-
-Tambien puedes crear tokens para usar la via HTTPs, puedes seguir los pasos en [este tutorial](https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html).
-
-::: callout-note
-## Actividad (15 min):
-
-Deberan contar con:
-
-1.  Una cuenta en GitHub
-
-2.  **R** y **RStudio** actualizados
-
-3.  Git instalado
-
-4.  [Conectar Github con SSH o HTTPs.](https://haydeeperuyero.github.io/Computo_Cientifico/git-y-github.html)
-:::
-
 ## Referencias
 
 -   Haydee tutorial: [Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos](https://haydeeperuyero.github.io/Computo_Cientifico/)

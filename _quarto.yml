@@ -11,6 +11,8 @@ book:
     - index.qmd
     - Bash.qmd
     - intro.qmd
+    - GitBash.qmd
+    - Parte1.qmd
     - Parte2.qmd
     - Parte3.qmd
   # Information

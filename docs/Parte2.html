@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Workshop sobre Git / Github 2024 - 3&nbsp; Comandos usados en Github y RStudio</title>
+<title>Workshop sobre Git / Github 2025 - 5&nbsp; Comandos usados en Github y RStudio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./Parte3.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./Parte1.html" rel="prev">
 <link href="./ViernesBioinfo_logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Parte2.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Comandos usados en Github y RStudio</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Parte2.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Comandos usados en Github y RStudio</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Workshop sobre Git / Github 2024</a> 
+      <a href="./">Workshop sobre Git / Github 2025</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/EveliaCoss/Workshop_GitGithub2024" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
@@ -148,14 +148,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./GitBash.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Instalar Git Bash en Windows</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Parte1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conectar a GitHub con SSH</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Parte2.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Comandos usados en Github y RStudio</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Comandos usados en Github y RStudio</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Parte3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Buenas practicas en R</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Buenas practicas en R</span></span></a>
   </div>
 </li>
     </ul>
@@ -168,10 +180,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#github-primero-rstudio-después" id="toc-github-primero-rstudio-después" class="nav-link active" data-scroll-target="#github-primero-rstudio-después"><span class="header-section-number">3.1</span> GitHub primero, RStudio después…</a></li>
-  <li><a href="#comentar-pull-y-push-en-rstudio" id="toc-comentar-pull-y-push-en-rstudio" class="nav-link" data-scroll-target="#comentar-pull-y-push-en-rstudio"><span class="header-section-number">3.2</span> Comentar, pull y push en Rstudio</a></li>
-  <li><a href="#pagina-de-inicio-en-github" id="toc-pagina-de-inicio-en-github" class="nav-link" data-scroll-target="#pagina-de-inicio-en-github"><span class="header-section-number">3.3</span> Pagina de inicio en GitHub</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">3.4</span> Referencias</a></li>
+  <li><a href="#github-primero-rstudio-después" id="toc-github-primero-rstudio-después" class="nav-link active" data-scroll-target="#github-primero-rstudio-después"><span class="header-section-number">5.1</span> GitHub primero, RStudio después…</a></li>
+  <li><a href="#comentar-pull-y-push-en-rstudio" id="toc-comentar-pull-y-push-en-rstudio" class="nav-link" data-scroll-target="#comentar-pull-y-push-en-rstudio"><span class="header-section-number">5.2</span> Comentar, pull y push en Rstudio</a></li>
+  <li><a href="#pagina-de-inicio-en-github" id="toc-pagina-de-inicio-en-github" class="nav-link" data-scroll-target="#pagina-de-inicio-en-github"><span class="header-section-number">5.3</span> Pagina de inicio en GitHub</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">5.4</span> Referencias</a></li>
   </ul>
 </nav>
     </div>
@@ -180,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Comandos usados en Github y RStudio</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Comandos usados en Github y RStudio</span></h1>
 </div>
 
 
@@ -228,8 +240,8 @@ Important
 <p><img src="figures/git-push.png" class="img-fluid figure-img" width="450"></p>
 </figure>
 </div>
-<section id="github-primero-rstudio-después" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="github-primero-rstudio-después"><span class="header-section-number">3.1</span> GitHub primero, RStudio después…</h2>
+<section id="github-primero-rstudio-después" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="github-primero-rstudio-después"><span class="header-section-number">5.1</span> GitHub primero, RStudio después…</h2>
 <ol type="1">
 <li><p>Crea un repositorio en GitHub: <code>mi_repositorio</code> &gt; <em>Public</em> &gt; <em>YES</em> initialize this repository with a <em>README</em> &gt; <code>click</code>en el gran botón verde “Create repository”</p></li>
 <li><p>En RStudio crea un nuevo proyecto: <em>File</em> &gt; <em>New Project</em> &gt; <em>Version Control</em> &gt; <em>Git</em>. Ahi pega el URL del repositorio <code>https://github.com/mi_usuario/mi_repositorio.git</code>. Da click en <em>Create Project</em>.</p></li>
@@ -242,19 +254,19 @@ Important
 </ul>
 <p>Con este procedimiento ya no es necesario preocuparse por configurar controles remotos Git y rastrear ramas en la línea de comandos.</p>
 </section>
-<section id="comentar-pull-y-push-en-rstudio" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="comentar-pull-y-push-en-rstudio"><span class="header-section-number">3.2</span> Comentar, pull y push en Rstudio</h2>
+<section id="comentar-pull-y-push-en-rstudio" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="comentar-pull-y-push-en-rstudio"><span class="header-section-number">5.2</span> Comentar, pull y push en Rstudio</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html"><img src="https://comunidadbioinfo.github.io/cdsb2023/img/gitrstudio_comment.png" class="img-fluid figure-img" width="600"></a></p>
 </figure>
 </div>
-<p>Con la&nbsp;<strong>flecha azul</strong>&nbsp;podemos hacer pull (<strong>RECUERDA HACERLO ANTES DE HACER UN PUSH</strong>), y con la flecha verde un <code>push</code>. Para poder comentar y hacer push debemos marcar con una palomita mediante un&nbsp;<code>click</code>&nbsp;en las pequeñas cajas blancas de la columna&nbsp;<em>Staged</em>, damos click en&nbsp;<em>commit</em>&nbsp;lo cual nos abre la siguiente ventana.</p>
+<p>Con la <strong>flecha azul</strong> podemos hacer pull (<strong>RECUERDA HACERLO ANTES DE HACER UN PUSH</strong>), y con la flecha verde un <code>push</code>. Para poder comentar y hacer push debemos marcar con una palomita mediante un <code>click</code> en las pequeñas cajas blancas de la columna <em>Staged</em>, damos click en <em>commit</em> lo cual nos abre la siguiente ventana.</p>
 <p><img src="https://comunidadbioinfo.github.io/cdsb2023/img/gitrstudio_push.png" class="img-fluid"></p>
-<p>Volvemos a dar&nbsp;<code>click</code>&nbsp;en&nbsp;<em>commit</em>, y finalizamos con&nbsp;<em>push</em>&nbsp;(flecha verde).</p>
+<p>Volvemos a dar <code>click</code> en <em>commit</em>, y finalizamos con <em>push</em> (flecha verde).</p>
 </section>
-<section id="pagina-de-inicio-en-github" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="pagina-de-inicio-en-github"><span class="header-section-number">3.3</span> Pagina de inicio en GitHub</h2>
+<section id="pagina-de-inicio-en-github" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="pagina-de-inicio-en-github"><span class="header-section-number">5.3</span> Pagina de inicio en GitHub</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -279,8 +291,8 @@ Actividad
 </figure>
 </div>
 </section>
-<section id="referencias" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="referencias"><span class="header-section-number">3.4</span> Referencias</h2>
+<section id="referencias" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="referencias"><span class="header-section-number">5.4</span> Referencias</h2>
 <ul>
 <li>Haydee tutorial: <a href="https://haydeeperuyero.github.io/Computo_Cientifico/">Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos</a></li>
 <li>Alejandra Medina tutorial: <a href="https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html">Control de versiones con GitHub y RStudio</a></li>
@@ -640,13 +652,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción a Git / GitHub</span></span>
+      <a href="./Parte1.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conectar a GitHub con SSH</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./Parte3.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Buenas practicas en R</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Buenas practicas en R</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

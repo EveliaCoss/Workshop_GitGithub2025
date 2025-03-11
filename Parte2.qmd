@@ -40,11 +40,11 @@ Con este procedimiento ya no es necesario preocuparse por configurar controles r
 
 [![](https://comunidadbioinfo.github.io/cdsb2023/img/gitrstudio_comment.png){width="600"}](https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html)
 
-Con la **flecha azul** podemos hacer pull (**RECUERDA HACERLO ANTES DE HACER UN PUSH**), y con la flecha verde un `push`. Para poder comentar y hacer push debemos marcar con una palomita mediante un `click` en las pequeñas cajas blancas de la columna *Staged*, damos click en *commit* lo cual nos abre la siguiente ventana.
+Con la **flecha azul** podemos hacer pull (**RECUERDA HACERLO ANTES DE HACER UN PUSH**), y con la flecha verde un `push`. Para poder comentar y hacer push debemos marcar con una palomita mediante un `click` en las pequeñas cajas blancas de la columna *Staged*, damos click en *commit* lo cual nos abre la siguiente ventana.
 
 ![](https://comunidadbioinfo.github.io/cdsb2023/img/gitrstudio_push.png)
 
-Volvemos a dar `click` en *commit*, y finalizamos con *push* (flecha verde).
+Volvemos a dar `click` en *commit*, y finalizamos con *push* (flecha verde).
 
 ## Pagina de inicio en GitHub
 
