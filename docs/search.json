@@ -84,13 +84,6 @@
     "text": "2.9 Clonar un repositorio y tener conexión/permisos para modificarlo\n\nGit puede comunicarse con un servidor remoto usando uno de dos protocolos, HTTPS o SSH, y cada protocolo usa credenciales diferentes.\nLa recomendación actual de GitHub es usar HTTPS porque es la manera más fácil de configurar y tiene operatividad en múltiples redes y plataformas.\n\nEs menos probable que HTTPS sea bloqueado por un firewall.\nUna conexión HTTPS permite que credential.helper almacene en caché su contraseña. (por tanto puedes configurar tu usuario y contraseña en tu equipo de uso).\nEs más sencillo acceder a un repositorio desde cualquier lugar, ya que solo necesitas los detalles de tu cuenta (no se requieren claves SSH) para escribir en el repositorio.\n\nUsualmente cuando inicies un proyecto colaborativo con GitHub inicializa el repositorio con un README. Copia el HTTPS URL para clonar el repositorio en la terminal git clone https://github.com/TU-USUARIO/TU-REPOSITORIO.git."
   },
   {
-    "objectID": "intro.html#conectar-a-github-con-ssh",
-    "href": "intro.html#conectar-a-github-con-ssh",
-    "title": "2  Introducción a Git / GitHub",
-    "section": "2.10 Conectar a GitHub con SSH",
-    "text": "2.10 Conectar a GitHub con SSH\nPuedes conectarte a GitHub utilizando el Protocolo de Secure Shell (SSH), lo cual proporciona un canal seguro sobre una red insegura.\nPuedes asegurar tus claves SSH y configurar un agente de autenticación para no tener que volver a ingresar tu contraseña cada vez que uses tus claves SSH.\nAqui esta la guia que puedes seguir https://docs.github.com/es/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases.\nTambien puedes crear tokens para usar la via HTTPs, puedes seguir los pasos en este tutorial.\n\n\n\n\n\n\nActividad (15 min):\n\n\n\nDeberan contar con:\n\nUna cuenta en GitHub\nR y RStudio actualizados\nGit instalado\nConectar Github con SSH o HTTPs."
-  },
-  {
     "objectID": "intro.html#referencias",
     "href": "intro.html#referencias",
     "title": "2  Introducción a Git / GitHub",
@@ -98,88 +91,11 @@
     "text": "2.10 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nGithub tutorial: Trabajar con contraseñas de clave SSH\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio\nHacia una biología computacional más reproducible, transparente y colaborativa"
   },
   {
-    "objectID": "Parte2.html#github-primero-rstudio-después",
-    "href": "Parte2.html#github-primero-rstudio-después",
-    "title": "5  Comandos usados en Github y RStudio",
-    "section": "5.1 GitHub primero, RStudio después…",
-    "text": "5.1 GitHub primero, RStudio después…\n\nCrea un repositorio en GitHub: mi_repositorio &gt; Public &gt; YES initialize this repository with a README &gt; clicken el gran botón verde “Create repository”\nEn RStudio crea un nuevo proyecto: File &gt; New Project &gt; Version Control &gt; Git. Ahi pega el URL del repositorio https://github.com/mi_usuario/mi_repositorio.git. Da click en Create Project.\n\nEsto nos generará los siguientes elementos:\n\nUn directorio nuevo\nUn repositorio Git enlazado a al repositorio de GitHub\nUn proyecto en RStudio\n\nCon este procedimiento ya no es necesario preocuparse por configurar controles remotos Git y rastrear ramas en la línea de comandos."
-  },
-  {
-    "objectID": "Parte2.html#comentar-pull-y-push-en-rstudio",
-    "href": "Parte2.html#comentar-pull-y-push-en-rstudio",
-    "title": "5  Comandos usados en Github y RStudio",
-    "section": "5.2 Comentar, pull y push en Rstudio",
-    "text": "5.2 Comentar, pull y push en Rstudio\n\n\n\n\n\nCon la flecha azul podemos hacer pull (RECUERDA HACERLO ANTES DE HACER UN PUSH), y con la flecha verde un push. Para poder comentar y hacer push debemos marcar con una palomita mediante un click en las pequeñas cajas blancas de la columna Staged, damos click en commit lo cual nos abre la siguiente ventana.\n\nVolvemos a dar click en commit, y finalizamos con push (flecha verde)."
-  },
-  {
-    "objectID": "Parte2.html#pagina-de-inicio-en-github",
-    "href": "Parte2.html#pagina-de-inicio-en-github",
-    "title": "5  Comandos usados en Github y RStudio",
-    "section": "5.3 Pagina de inicio en GitHub",
-    "text": "5.3 Pagina de inicio en GitHub\n\n\n\n\n\n\nActividad\n\n\n\n\nEn GitHub, crea un repositorio con el mismo nombre de usuario. Ejemplo: Mi usuario es EveliaCoss y mi repositorio se llama EveliaCoss, dandome la siguiente liga https://github.com/EveliaCoss/EveliaCoss\nAgrega un README al repositorio con tu informacion. Por Default ya trae una plantilla, modificala y adaptala a tu gusto.\nVisualiza como cambia tu inicio en el Github.\nSincroniza el GitHub en RStudio y realiza los cambios desde ahi."
-  },
-  {
-    "objectID": "Parte2.html#referencias",
-    "href": "Parte2.html#referencias",
-    "title": "5  Comandos usados en Github y RStudio",
-    "section": "5.4 Referencias",
-    "text": "5.4 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio"
-  },
-  {
-    "objectID": "Parte3.html#materiales-informativos",
-    "href": "Parte3.html#materiales-informativos",
-    "title": "5  Buenas practicas en R",
-    "section": "5.1 Materiales informativos",
-    "text": "5.1 Materiales informativos\n\nCurso de Joselyn Cristina Chávez Fuentes\nMe ayudo mucho este Video\nDocumentación de funciones de Andrés Arredondo Cruz\n\n💪 Estuve muy intensa viendo su codigo. Muchas gracias por tenerlos publico."
-  },
-  {
-    "objectID": "Parte3.html#un-algoritmo-nos-permite-resolver-un-problema",
-    "href": "Parte3.html#un-algoritmo-nos-permite-resolver-un-problema",
-    "title": "5  Buenas practicas en R",
-    "section": "5.2 Un algoritmo nos permite resolver un problema ⭐",
-    "text": "5.2 Un algoritmo nos permite resolver un problema ⭐\nUn algoritmo es un método para resolver un problema mediante una serie de pasos definidos, precisos y finitos.\n\nDefinido: si se sigue dos veces, se obtiene el mismo resultado. Es reproducible.\nPreciso: implica el orden de realización de cada uno de los pasos.\nFinito: Tiene un numero determinado de pasos, implica que tiene un fin.\n\n\nUn algoritmo podemos definirlo como un programa o software."
-  },
-  {
-    "objectID": "Parte3.html#para-escribir-un-buen-software-necesitas",
-    "href": "Parte3.html#para-escribir-un-buen-software-necesitas",
-    "title": "5  Buenas practicas en R",
-    "section": "5.3 Para escribir un buen software necesitas:",
-    "text": "5.3 Para escribir un buen software necesitas:\n\nEscribir código mantenible (maintainable code), usar control de versiones (version control) y rastreadores de problemas (issue trackers), revisiones de código (code reviews), pruebas unitarias (unit testing) y automatización de tareas (task automation).\nWilson, et al. 2014. PLOS Biology\n\nCon el fin de previnir retracciones.\n\n\n\n\n\n\nPasos para escribir un buen software\n\n\n\n\nAnálisis del problema / Definir el problema\nDiseño del algoritmo / Diseño del programa\nCodificación / Escribir el código\nCompilación y ejecución del programa\nVerificación / Realizar pruebas\nDepuración / Detectar los errores y corregirlos\n\n\nProgramacion defensiva\n\n\nDocumentación"
-  },
-  {
-    "objectID": "Parte3.html#paso-7-documentación",
-    "href": "Parte3.html#paso-7-documentación",
-    "title": "5  Buenas practicas en R",
-    "section": "5.4 Paso 7: Documentación",
-    "text": "5.4 Paso 7: Documentación\n\n\n\n\n\n\nNote\n\n\n\n\nAutor (author): Su nombre\nDia (date): Fecha de creación\nPaquetes (packages)\nDirectorio de trabajo (Working directory): En que carpeta se encuentra tu datos y programa.\nInformación descriptiva del programa (Description): ¿Para qué sirve el programa? Ej: El siguiente programa realiza la suma de dos numeros enteros a partir de la entrada del usuario y posteriormente la imprime en pantalla.\nUsage ¿Cómo se utiliza?\nArgumentos (Arguments)\n\nInformación de entrada (Data Inputs): Ej: Solo numeros enteros (sin decimales).\nInformación de salida (Outpus): Graficas, figuras, tablas, etc."
-  },
-  {
-    "objectID": "Parte3.html#puntos-claves-para-buenas-practicas-en-bioinfo",
-    "href": "Parte3.html#puntos-claves-para-buenas-practicas-en-bioinfo",
-    "title": "5  Buenas practicas en R",
-    "section": "5.5 Puntos claves para buenas practicas en bioinfo ⭐",
-    "text": "5.5 Puntos claves para buenas practicas en bioinfo ⭐\n\nEscriba programas para personas, no para computadoras (Documenta qué hace y por qué). - Se coherente en la nomenclatura, indentación y otros aspectos del estilo.\nDivide los programas en funciones cortas de un solo propósito. 💻 📚\nNo repitas tu código. Crea pasos reproducibles o que se repitan por si solas. ➰\nPlanifique los errores (Programacion defensiva) 🚩\nOptimice el software sólo después de que funcione correctamente. - Si funciona no lo modifiques, simplificalo.\nColaborar - Busque siempre bibliotecas de software bien mantenidas que hagan lo que necesita. 👥\n\n\n\n\n\n\n\nEjemplo de como realizo mis documentos 💜\n\n\n\nAqui les dejo el script que les doy a mis alumnos VisualizacionDatos.R del curso de Análisis de datos de RNA-Seq."
-  },
-  {
-    "objectID": "Parte3.html#pagina-web-en-github",
-    "href": "Parte3.html#pagina-web-en-github",
-    "title": "5  Buenas practicas en R",
-    "section": "5.6 Pagina web en GitHub",
-    "text": "5.6 Pagina web en GitHub\n\n\n\n\n\n\nActividad\n\n\n\n\nEn GitHub, crea un repositorio con el mismo nombre de usuario y agregale “.github.io”. Ejemplo: Mi usuario es EveliaCoss y mi repositorio se llama “EveliaCoss.github.io”, dandome la siguiente liga https://github.com/EveliaCoss/EveliaCoss.github.io\nDescarga el archivo index.Rmd y modificalo con tu informacion en tu repositorio.\nNo olvides sincronizar el GitHub en RStudio y realiza los cambios desde ahi.\nEn GitHub, convierte en pagina web tu repositorio en Settings &gt; Pages &gt; Branch cambia a Main y root &gt; Save"
-  },
-  {
-    "objectID": "Parte3.html#top-github-users-by-public-contributions-in-mexico",
-    "href": "Parte3.html#top-github-users-by-public-contributions-in-mexico",
-    "title": "5  Buenas practicas en R",
-    "section": "5.7 Top GitHub Users By Public Contributions in Mexico",
-    "text": "5.7 Top GitHub Users By Public Contributions in Mexico"
-  },
-  {
-    "objectID": "Parte3.html#referencias",
-    "href": "Parte3.html#referencias",
-    "title": "5  Buenas practicas en R",
-    "section": "5.8 Referencias",
-    "text": "5.8 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio\nWilson, et al. 2014. Best Practices for Scientific Computing. PLOS Biology\nEvelia Coss - tutorial Buenas practicas en R\nEvelia Coss - Make your CV tutorial"
+    "objectID": "GitBash.html#referencia",
+    "href": "GitBash.html#referencia",
+    "title": "3  Instalar Git Bash en Windows",
+    "section": "3.1 Referencia",
+    "text": "3.1 Referencia\n\nGuia de instalacion de Git Bash"
   },
   {
     "objectID": "Parte1.html#paso-1.-generar-una-llave-pública",
@@ -217,10 +133,87 @@
     "text": "4.5 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio"
   },
   {
-    "objectID": "GitBash.html#referencia",
-    "href": "GitBash.html#referencia",
-    "title": "3  Instalar Git Bash en Windows",
-    "section": "3.1 Referencia",
-    "text": "3.1 Referencia\n\nGuia de instalacion de Git Bash"
+    "objectID": "Parte2.html#github-primero-rstudio-después",
+    "href": "Parte2.html#github-primero-rstudio-después",
+    "title": "5  Comandos usados en Github y RStudio",
+    "section": "5.1 GitHub primero, RStudio después…",
+    "text": "5.1 GitHub primero, RStudio después…\n\nCrea un repositorio en GitHub: mi_repositorio &gt; Public &gt; YES initialize this repository with a README &gt; clicken el gran botón verde “Create repository”\nEn RStudio crea un nuevo proyecto: File &gt; New Project &gt; Version Control &gt; Git. Ahi pega el URL del repositorio https://github.com/mi_usuario/mi_repositorio.git. Da click en Create Project.\n\nEsto nos generará los siguientes elementos:\n\nUn directorio nuevo\nUn repositorio Git enlazado a al repositorio de GitHub\nUn proyecto en RStudio\n\nCon este procedimiento ya no es necesario preocuparse por configurar controles remotos Git y rastrear ramas en la línea de comandos."
+  },
+  {
+    "objectID": "Parte2.html#comentar-pull-y-push-en-rstudio",
+    "href": "Parte2.html#comentar-pull-y-push-en-rstudio",
+    "title": "5  Comandos usados en Github y RStudio",
+    "section": "5.2 Comentar, pull y push en Rstudio",
+    "text": "5.2 Comentar, pull y push en Rstudio\n\n\n\n\n\nCon la flecha azul podemos hacer pull (RECUERDA HACERLO ANTES DE HACER UN PUSH), y con la flecha verde un push. Para poder comentar y hacer push debemos marcar con una palomita mediante un click en las pequeñas cajas blancas de la columna Staged, damos click en commit lo cual nos abre la siguiente ventana.\n\nVolvemos a dar click en commit, y finalizamos con push (flecha verde)."
+  },
+  {
+    "objectID": "Parte2.html#pagina-de-inicio-en-github",
+    "href": "Parte2.html#pagina-de-inicio-en-github",
+    "title": "5  Comandos usados en Github y RStudio",
+    "section": "5.3 Pagina de inicio en GitHub",
+    "text": "5.3 Pagina de inicio en GitHub\n\n\n\n\n\n\nActividad\n\n\n\n\nEn GitHub, crea un repositorio con el mismo nombre de usuario. Ejemplo: Mi usuario es EveliaCoss y mi repositorio se llama EveliaCoss, dandome la siguiente liga https://github.com/EveliaCoss/EveliaCoss\nAgrega un README al repositorio con tu informacion. Por Default ya trae una plantilla, modificala y adaptala a tu gusto.\nVisualiza como cambia tu inicio en el Github.\nSincroniza el GitHub en RStudio y realiza los cambios desde ahi."
+  },
+  {
+    "objectID": "Parte2.html#referencias",
+    "href": "Parte2.html#referencias",
+    "title": "5  Comandos usados en Github y RStudio",
+    "section": "5.4 Referencias",
+    "text": "5.4 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio"
+  },
+  {
+    "objectID": "Parte3.html#materiales-informativos",
+    "href": "Parte3.html#materiales-informativos",
+    "title": "6  Buenas practicas en R",
+    "section": "6.1 Materiales informativos",
+    "text": "6.1 Materiales informativos\n\nCurso de Joselyn Cristina Chávez Fuentes\nMe ayudo mucho este Video\nDocumentación de funciones de Andrés Arredondo Cruz\n\n💪 Estuve muy intensa viendo su codigo. Muchas gracias por tenerlos publico."
+  },
+  {
+    "objectID": "Parte3.html#un-algoritmo-nos-permite-resolver-un-problema",
+    "href": "Parte3.html#un-algoritmo-nos-permite-resolver-un-problema",
+    "title": "6  Buenas practicas en R",
+    "section": "6.2 Un algoritmo nos permite resolver un problema ⭐",
+    "text": "6.2 Un algoritmo nos permite resolver un problema ⭐\nUn algoritmo es un método para resolver un problema mediante una serie de pasos definidos, precisos y finitos.\n\nDefinido: si se sigue dos veces, se obtiene el mismo resultado. Es reproducible.\nPreciso: implica el orden de realización de cada uno de los pasos.\nFinito: Tiene un numero determinado de pasos, implica que tiene un fin.\n\n\nUn algoritmo podemos definirlo como un programa o software."
+  },
+  {
+    "objectID": "Parte3.html#para-escribir-un-buen-software-necesitas",
+    "href": "Parte3.html#para-escribir-un-buen-software-necesitas",
+    "title": "6  Buenas practicas en R",
+    "section": "6.3 Para escribir un buen software necesitas:",
+    "text": "6.3 Para escribir un buen software necesitas:\n\nEscribir código mantenible (maintainable code), usar control de versiones (version control) y rastreadores de problemas (issue trackers), revisiones de código (code reviews), pruebas unitarias (unit testing) y automatización de tareas (task automation).\nWilson, et al. 2014. PLOS Biology\n\nCon el fin de previnir retracciones.\n\n\n\n\n\n\nPasos para escribir un buen software\n\n\n\n\nAnálisis del problema / Definir el problema\nDiseño del algoritmo / Diseño del programa\nCodificación / Escribir el código\nCompilación y ejecución del programa\nVerificación / Realizar pruebas\nDepuración / Detectar los errores y corregirlos\n\n\nProgramacion defensiva\n\n\nDocumentación"
+  },
+  {
+    "objectID": "Parte3.html#paso-7-documentación",
+    "href": "Parte3.html#paso-7-documentación",
+    "title": "6  Buenas practicas en R",
+    "section": "6.4 Paso 7: Documentación",
+    "text": "6.4 Paso 7: Documentación\n\n\n\n\n\n\nNote\n\n\n\n\nAutor (author): Su nombre\nDia (date): Fecha de creación\nPaquetes (packages)\nDirectorio de trabajo (Working directory): En que carpeta se encuentra tu datos y programa.\nInformación descriptiva del programa (Description): ¿Para qué sirve el programa? Ej: El siguiente programa realiza la suma de dos numeros enteros a partir de la entrada del usuario y posteriormente la imprime en pantalla.\nUsage ¿Cómo se utiliza?\nArgumentos (Arguments)\n\nInformación de entrada (Data Inputs): Ej: Solo numeros enteros (sin decimales).\nInformación de salida (Outpus): Graficas, figuras, tablas, etc."
+  },
+  {
+    "objectID": "Parte3.html#puntos-claves-para-buenas-practicas-en-bioinfo",
+    "href": "Parte3.html#puntos-claves-para-buenas-practicas-en-bioinfo",
+    "title": "6  Buenas practicas en R",
+    "section": "6.5 Puntos claves para buenas practicas en bioinfo ⭐",
+    "text": "6.5 Puntos claves para buenas practicas en bioinfo ⭐\n\nEscriba programas para personas, no para computadoras (Documenta qué hace y por qué). - Se coherente en la nomenclatura, indentación y otros aspectos del estilo.\nDivide los programas en funciones cortas de un solo propósito. 💻 📚\nNo repitas tu código. Crea pasos reproducibles o que se repitan por si solas. ➰\nPlanifique los errores (Programacion defensiva) 🚩\nOptimice el software sólo después de que funcione correctamente. - Si funciona no lo modifiques, simplificalo.\nColaborar - Busque siempre bibliotecas de software bien mantenidas que hagan lo que necesita. 👥\n\n\n\n\n\n\n\nEjemplo de como realizo mis documentos 💜\n\n\n\nAqui les dejo el script que les doy a mis alumnos VisualizacionDatos.R del curso de Análisis de datos de RNA-Seq."
+  },
+  {
+    "objectID": "Parte3.html#pagina-web-en-github",
+    "href": "Parte3.html#pagina-web-en-github",
+    "title": "6  Buenas practicas en R",
+    "section": "6.6 Pagina web en GitHub",
+    "text": "6.6 Pagina web en GitHub\n\n\n\n\n\n\nActividad\n\n\n\n\nEn GitHub, crea un repositorio con el mismo nombre de usuario y agregale “.github.io”. Ejemplo: Mi usuario es EveliaCoss y mi repositorio se llama “EveliaCoss.github.io”, dandome la siguiente liga https://github.com/EveliaCoss/EveliaCoss.github.io\nDescarga el archivo index.Rmd y modificalo con tu informacion en tu repositorio.\nNo olvides sincronizar el GitHub en RStudio y realiza los cambios desde ahi.\nEn GitHub, convierte en pagina web tu repositorio en Settings &gt; Pages &gt; Branch cambia a Main y root &gt; Save"
+  },
+  {
+    "objectID": "Parte3.html#top-github-users-by-public-contributions-in-mexico",
+    "href": "Parte3.html#top-github-users-by-public-contributions-in-mexico",
+    "title": "6  Buenas practicas en R",
+    "section": "6.7 Top GitHub Users By Public Contributions in Mexico",
+    "text": "6.7 Top GitHub Users By Public Contributions in Mexico"
+  },
+  {
+    "objectID": "Parte3.html#referencias",
+    "href": "Parte3.html#referencias",
+    "title": "6  Buenas practicas en R",
+    "section": "6.8 Referencias",
+    "text": "6.8 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio\nWilson, et al. 2014. Best Practices for Scientific Computing. PLOS Biology\nEvelia Coss - tutorial Buenas practicas en R\nEvelia Coss - Make your CV tutorial"
   }
 ]
