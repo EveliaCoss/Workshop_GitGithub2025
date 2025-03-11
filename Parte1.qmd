@@ -69,7 +69,29 @@ Este comando mostrará tu clave pública en la terminal.
 6.  En el campo **"Key"**, pega la clave SSH que copiaste previamente de la terminal.
 7.  Haz clic en **"Add SSH key"** para guardar la clave.
 
-## Paso 4. Verificar la conexión
+## Paso 4. Configurar RStudio para usar Git Bash como terminal
+
+1.  Abre **RStudio**.
+
+2.  Dirígete a **Tools** (Herramientas) en la barra superior y selecciona **Global Options** (Opciones globales).
+
+3.  En el menú de opciones globales, selecciona la pestaña **Terminal**.
+
+4.  En el campo **New terminal open with**, selecciona **Git Bash**.
+
+    ![](figures/Rstudio_GitBash.jpg)
+
+5.  Haz clic en **Apply** y luego en **OK**.
+
+## Paso 5. Abrir la terminal de Git Bash en RStudio
+
+Ahora, para abrir la terminal de **Git Bash dentro de RStudio**, solo tienes que:
+
+-   Ir al **Tools** , hacer clic en **Terminal** y en abrir **New terminal**.
+
+-   Deberías ver que se abre una nueva sesión con **Git Bash** como la terminal predeterminada.
+
+## Paso 6. Verificar la conexión
 
 Vuelve a la terminal y ejecuta el siguiente comando para verificar que tu clave SSH está correctamente configurada con GitHub:
 
@@ -94,6 +116,23 @@ Hi username! You've successfully authenticated, but GitHub does not provide shel
 ```
 
 Esto confirmará que tu clave SSH se ha agregado correctamente a tu cuenta de GitHub y que la conexión es exitosa.
+
+### Solución a Error de Configuración de Usuario en Git
+
+El comando `git config` se utiliza para configurar opciones en Git, y los siguientes comandos en particular se usan para establecer tu nombre y correo electrónico globalmente en tu configuración de Git:
+
+```         
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+1.  `git config --global user.email "you@example.com"`
+
+Este comando configura tu dirección de correo electrónico, la cual será utilizada en todos tus commits de Git. El correo electrónico asociado con los commits es importante porque ayuda a identificar quién realizó qué cambios en el repositorio. --global significa que esta configuración se aplicará a todos los repositorios en tu máquina.
+
+2.  `git config --global user.name "Your Name"`
+
+Este comando establece tu nombre de usuario, que también se asociará con los commits que realices. Al igual que el correo electrónico, se utilizará en todos tus commits en cualquier repositorio de Git en tu máquina.
 
 ## Referencias
 

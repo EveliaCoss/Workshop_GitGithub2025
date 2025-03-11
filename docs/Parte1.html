@@ -217,8 +217,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#paso-1.-generar-una-llave-pública" id="toc-paso-1.-generar-una-llave-pública" class="nav-link active" data-scroll-target="#paso-1.-generar-una-llave-pública"><span class="header-section-number">4.1</span> Paso 1. Generar una llave pública</a></li>
   <li><a href="#paso-2.-copiar-la-clave-ssh-pública" id="toc-paso-2.-copiar-la-clave-ssh-pública" class="nav-link" data-scroll-target="#paso-2.-copiar-la-clave-ssh-pública"><span class="header-section-number">4.2</span> Paso 2. Copiar la clave SSH pública</a></li>
   <li><a href="#paso-3.-agregar-la-clave-ssh-a-tu-cuenta-de-github" id="toc-paso-3.-agregar-la-clave-ssh-a-tu-cuenta-de-github" class="nav-link" data-scroll-target="#paso-3.-agregar-la-clave-ssh-a-tu-cuenta-de-github"><span class="header-section-number">4.3</span> Paso 3. Agregar la clave SSH a tu cuenta de GitHub</a></li>
-  <li><a href="#paso-4.-verificar-la-conexión" id="toc-paso-4.-verificar-la-conexión" class="nav-link" data-scroll-target="#paso-4.-verificar-la-conexión"><span class="header-section-number">4.4</span> Paso 4. Verificar la conexión</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">4.5</span> Referencias</a></li>
+  <li><a href="#paso-4.-configurar-rstudio-para-usar-git-bash-como-terminal" id="toc-paso-4.-configurar-rstudio-para-usar-git-bash-como-terminal" class="nav-link" data-scroll-target="#paso-4.-configurar-rstudio-para-usar-git-bash-como-terminal"><span class="header-section-number">4.4</span> Paso 4. Configurar RStudio para usar Git Bash como terminal</a></li>
+  <li><a href="#paso-5.-abrir-la-terminal-de-git-bash-en-rstudio" id="toc-paso-5.-abrir-la-terminal-de-git-bash-en-rstudio" class="nav-link" data-scroll-target="#paso-5.-abrir-la-terminal-de-git-bash-en-rstudio"><span class="header-section-number">4.5</span> Paso 5. Abrir la terminal de Git Bash en RStudio</a></li>
+  <li><a href="#paso-6.-verificar-la-conexión" id="toc-paso-6.-verificar-la-conexión" class="nav-link" data-scroll-target="#paso-6.-verificar-la-conexión"><span class="header-section-number">4.6</span> Paso 6. Verificar la conexión</a>
+  <ul>
+  <li><a href="#solución-a-error-de-configuración-de-usuario-en-git" id="toc-solución-a-error-de-configuración-de-usuario-en-git" class="nav-link" data-scroll-target="#solución-a-error-de-configuración-de-usuario-en-git"><span class="header-section-number">4.6.1</span> Solución a Error de Configuración de Usuario en Git</a></li>
+  </ul></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">4.7</span> Referencias</a></li>
   </ul>
 </nav>
     </div>
@@ -302,8 +307,27 @@ Actividad (15 min)
 <li>Haz clic en <strong>“Add SSH key”</strong> para guardar la clave.</li>
 </ol>
 </section>
-<section id="paso-4.-verificar-la-conexión" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="paso-4.-verificar-la-conexión"><span class="header-section-number">4.4</span> Paso 4. Verificar la conexión</h2>
+<section id="paso-4.-configurar-rstudio-para-usar-git-bash-como-terminal" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="paso-4.-configurar-rstudio-para-usar-git-bash-como-terminal"><span class="header-section-number">4.4</span> Paso 4. Configurar RStudio para usar Git Bash como terminal</h2>
+<ol type="1">
+<li><p>Abre <strong>RStudio</strong>.</p></li>
+<li><p>Dirígete a <strong>Tools</strong> (Herramientas) en la barra superior y selecciona <strong>Global Options</strong> (Opciones globales).</p></li>
+<li><p>En el menú de opciones globales, selecciona la pestaña <strong>Terminal</strong>.</p></li>
+<li><p>En el campo <strong>New terminal open with</strong>, selecciona <strong>Git Bash</strong>.</p>
+<p><img src="figures/Rstudio_GitBash.jpg" class="img-fluid"></p></li>
+<li><p>Haz clic en <strong>Apply</strong> y luego en <strong>OK</strong>.</p></li>
+</ol>
+</section>
+<section id="paso-5.-abrir-la-terminal-de-git-bash-en-rstudio" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="paso-5.-abrir-la-terminal-de-git-bash-en-rstudio"><span class="header-section-number">4.5</span> Paso 5. Abrir la terminal de Git Bash en RStudio</h2>
+<p>Ahora, para abrir la terminal de <strong>Git Bash dentro de RStudio</strong>, solo tienes que:</p>
+<ul>
+<li><p>Ir al <strong>Tools</strong> , hacer clic en <strong>Terminal</strong> y en abrir <strong>New terminal</strong>.</p></li>
+<li><p>Deberías ver que se abre una nueva sesión con <strong>Git Bash</strong> como la terminal predeterminada.</p></li>
+</ul>
+</section>
+<section id="paso-6.-verificar-la-conexión" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="paso-6.-verificar-la-conexión"><span class="header-section-number">4.6</span> Paso 6. Verificar la conexión</h2>
 <p>Vuelve a la terminal y ejecuta el siguiente comando para verificar que tu clave SSH está correctamente configurada con GitHub:</p>
 <div class="sourceCode" id="cb5" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-T</span> git@github.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>En caso de que se necesite, puedes especificar la llave que usaste:</p>
@@ -313,9 +337,23 @@ Actividad (15 min)
 <p>Si todo está bien configurado, deberías ver un mensaje similar a este:</p>
 <pre><code>Hi username! You've successfully authenticated, but GitHub does not provide shell access.</code></pre>
 <p>Esto confirmará que tu clave SSH se ha agregado correctamente a tu cuenta de GitHub y que la conexión es exitosa.</p>
+<section id="solución-a-error-de-configuración-de-usuario-en-git" class="level3" data-number="4.6.1">
+<h3 data-number="4.6.1" class="anchored" data-anchor-id="solución-a-error-de-configuración-de-usuario-en-git"><span class="header-section-number">4.6.1</span> Solución a Error de Configuración de Usuario en Git</h3>
+<p>El comando <code>git config</code> se utiliza para configurar opciones en Git, y los siguientes comandos en particular se usan para establecer tu nombre y correo electrónico globalmente en tu configuración de Git:</p>
+<pre><code>git config --global user.email "you@example.com"
+git config --global user.name "Your Name"</code></pre>
+<ol type="1">
+<li><code>git config --global user.email "you@example.com"</code></li>
+</ol>
+<p>Este comando configura tu dirección de correo electrónico, la cual será utilizada en todos tus commits de Git. El correo electrónico asociado con los commits es importante porque ayuda a identificar quién realizó qué cambios en el repositorio. –global significa que esta configuración se aplicará a todos los repositorios en tu máquina.</p>
+<ol start="2" type="1">
+<li><code>git config --global user.name "Your Name"</code></li>
+</ol>
+<p>Este comando establece tu nombre de usuario, que también se asociará con los commits que realices. Al igual que el correo electrónico, se utilizará en todos tus commits en cualquier repositorio de Git en tu máquina.</p>
 </section>
-<section id="referencias" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="referencias"><span class="header-section-number">4.5</span> Referencias</h2>
+</section>
+<section id="referencias" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="referencias"><span class="header-section-number">4.7</span> Referencias</h2>
 <ul>
 <li>Haydee tutorial: <a href="https://haydeeperuyero.github.io/Computo_Cientifico/">Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos</a></li>
 <li>Alejandra Medina tutorial: <a href="https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html">Control de versiones con GitHub y RStudio</a></li>

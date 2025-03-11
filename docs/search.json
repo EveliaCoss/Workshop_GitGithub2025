@@ -119,18 +119,32 @@
     "text": "4.3 Paso 3. Agregar la clave SSH a tu cuenta de GitHub\n\nInicia sesión en GitHub en tu navegador.\nHaz clic en tu foto de perfil en la esquina superior derecha y selecciona “Settings” (Configuración).\nEn el menú lateral izquierdo, selecciona “SSH and GPG keys”.\nHaz clic en el botón verde “New SSH key”.\nEn el campo “Title”, ingresa un nombre descriptivo para tu clave (por ejemplo, “Mi computadora personal”).\nEn el campo “Key”, pega la clave SSH que copiaste previamente de la terminal.\nHaz clic en “Add SSH key” para guardar la clave."
   },
   {
-    "objectID": "Parte1.html#paso-4.-verificar-la-conexión",
-    "href": "Parte1.html#paso-4.-verificar-la-conexión",
+    "objectID": "Parte1.html#paso-4.-configurar-rstudio-para-usar-git-bash-como-terminal",
+    "href": "Parte1.html#paso-4.-configurar-rstudio-para-usar-git-bash-como-terminal",
     "title": "4  Conectar a GitHub con SSH",
-    "section": "4.4 Paso 4. Verificar la conexión",
-    "text": "4.4 Paso 4. Verificar la conexión\nVuelve a la terminal y ejecuta el siguiente comando para verificar que tu clave SSH está correctamente configurada con GitHub:\nssh -T git@github.com\nEn caso de que se necesite, puedes especificar la llave que usaste:\nssh -i ~/.ssh/id_ed25519.pub -T git@github.com\nEl comando ssh -T git@github.com simplemente verifica que tu clave privada se está usando correctamente y que tu clave pública ha sido registrada en GitHub.\nSi es la primera vez que te conectas a GitHub con SSH, puede que veas un mensaje que te pregunte si deseas continuar conectándote. Escribe “yes”.\nSi todo está bien configurado, deberías ver un mensaje similar a este:\nHi username! You've successfully authenticated, but GitHub does not provide shell access.\nEsto confirmará que tu clave SSH se ha agregado correctamente a tu cuenta de GitHub y que la conexión es exitosa."
+    "section": "4.4 Paso 4. Configurar RStudio para usar Git Bash como terminal",
+    "text": "4.4 Paso 4. Configurar RStudio para usar Git Bash como terminal\n\nAbre RStudio.\nDirígete a Tools (Herramientas) en la barra superior y selecciona Global Options (Opciones globales).\nEn el menú de opciones globales, selecciona la pestaña Terminal.\nEn el campo New terminal open with, selecciona Git Bash.\n\nHaz clic en Apply y luego en OK."
+  },
+  {
+    "objectID": "Parte1.html#paso-5.-abrir-la-terminal-de-git-bash-en-rstudio",
+    "href": "Parte1.html#paso-5.-abrir-la-terminal-de-git-bash-en-rstudio",
+    "title": "4  Conectar a GitHub con SSH",
+    "section": "4.5 Paso 5. Abrir la terminal de Git Bash en RStudio",
+    "text": "4.5 Paso 5. Abrir la terminal de Git Bash en RStudio\nAhora, para abrir la terminal de Git Bash dentro de RStudio, solo tienes que:\n\nIr al Tools , hacer clic en Terminal y en abrir New terminal.\nDeberías ver que se abre una nueva sesión con Git Bash como la terminal predeterminada."
+  },
+  {
+    "objectID": "Parte1.html#paso-6.-verificar-la-conexión",
+    "href": "Parte1.html#paso-6.-verificar-la-conexión",
+    "title": "4  Conectar a GitHub con SSH",
+    "section": "4.6 Paso 6. Verificar la conexión",
+    "text": "4.6 Paso 6. Verificar la conexión\nVuelve a la terminal y ejecuta el siguiente comando para verificar que tu clave SSH está correctamente configurada con GitHub:\nssh -T git@github.com\nEn caso de que se necesite, puedes especificar la llave que usaste:\nssh -i ~/.ssh/id_ed25519.pub -T git@github.com\nEl comando ssh -T git@github.com simplemente verifica que tu clave privada se está usando correctamente y que tu clave pública ha sido registrada en GitHub.\nSi es la primera vez que te conectas a GitHub con SSH, puede que veas un mensaje que te pregunte si deseas continuar conectándote. Escribe “yes”.\nSi todo está bien configurado, deberías ver un mensaje similar a este:\nHi username! You've successfully authenticated, but GitHub does not provide shell access.\nEsto confirmará que tu clave SSH se ha agregado correctamente a tu cuenta de GitHub y que la conexión es exitosa.\n\n4.6.1 Solución a Error de Configuración de Usuario en Git\nEl comando git config se utiliza para configurar opciones en Git, y los siguientes comandos en particular se usan para establecer tu nombre y correo electrónico globalmente en tu configuración de Git:\ngit config --global user.email \"you@example.com\"\ngit config --global user.name \"Your Name\"\n\ngit config --global user.email \"you@example.com\"\n\nEste comando configura tu dirección de correo electrónico, la cual será utilizada en todos tus commits de Git. El correo electrónico asociado con los commits es importante porque ayuda a identificar quién realizó qué cambios en el repositorio. –global significa que esta configuración se aplicará a todos los repositorios en tu máquina.\n\ngit config --global user.name \"Your Name\"\n\nEste comando establece tu nombre de usuario, que también se asociará con los commits que realices. Al igual que el correo electrónico, se utilizará en todos tus commits en cualquier repositorio de Git en tu máquina."
   },
   {
     "objectID": "Parte1.html#referencias",
     "href": "Parte1.html#referencias",
     "title": "4  Conectar a GitHub con SSH",
-    "section": "4.5 Referencias",
-    "text": "4.5 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio"
+    "section": "4.7 Referencias",
+    "text": "4.7 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio"
   },
   {
     "objectID": "Parte2.html#github-primero-rstudio-después",
